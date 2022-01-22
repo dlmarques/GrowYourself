@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Sans+Narrow:wght@700&display=swap");
+body {
+  font-family: "Noto Sans", sans-serif;
+
+  font-family: "Roboto", sans-serif;
+
+  font-family: "Ubuntu", sans-serif;
+}
+
+.topbar {
+  width: 100vw;
+  height: 96px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  svg {
+    color: rgb(255, 255, 255);
+    font-size: 2.3rem;
+    margin: 20px;
+    cursor: pointer;
+    order: 1;
+  }
+
+  .topbar-menu {
+    order: 2;
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family: "Noto Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin-left: 150px;
+
+    @media only screen and (max-width: 830px) {
+      display: none;
+    }
+  }
+
+  #menuMobile {
+    @media only screen and (min-width: 830px) {
+      display: none;
+    }
+  }
+
+  #Logo {
+    margin: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    @media only screen and (max-width: 830px) {
+      display: none;
+    }
+  }
+
+  .right {
+    display: flex;
+  }
+}
+.main {
+  width: 100vw;
+  height: calc(100vh - 126px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+  .sidebar {
+    width: 76px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media only screen and (max-width: 830px) {
+      display: none;
+    }
+    a {
+      display: flex;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      justify-content: center;
+      padding: 15px;
+      font-size: 1.5rem;
+
+      &:hover {
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+
+        svg {
+          color: rgb(255, 255, 255);
+        }
+      }
+
+      svg {
+        color: rgb(0, 0, 0);
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+  .content {
+    width: 100%;
+
+    @media only screen and (max-width: 830px) {
+      width: 100%;
+    }
+  }
+}

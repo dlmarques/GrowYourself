@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap");
+
+.animate__animated.animate__fadeInLeftBig {
+  width: 250px;
+  height: 110%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  z-index: 99;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+
+  span {
+    position: absolute;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+  }
+
+  .links-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3em;
+    margin-top: 80px;
+
+    a {
+      font-size: 1.7em;
+      color: white;
+
+      &:hover {
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        transform: scale(1.1);
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .auth-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 700px;
+    border-top: 1px solid rgba(172, 172, 172, 0.192);
+
+    a {
+      margin-top: 30px;
+      font-size: 1.4em;
+      color: white;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    @media only screen and (min-width: 600px) {
+      display: none;
+    }
+  }
+}
+
+.ghost-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: transparent;
+}

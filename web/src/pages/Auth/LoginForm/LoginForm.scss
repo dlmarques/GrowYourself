@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=PT+Sans+Narrow:wght@700&display=swap");
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  max-width: 450px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+
+  a {
+    margin-top: 5px;
+  }
+}
+
+.titlelogin {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.separator {
+  width: 150px;
+  height: 4px;
+  background-color: #000000;
+  margin: 24px;
+}
+
+.welcome-message {
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 28px;
+  margin-bottom: 30px;
+  color: #696969;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.form-control {
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 24px;
+
+  svg {
+    z-index: 99;
+    font-size: 2em;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+  }
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+}
+
+input {
+  width: 100%;
+  background: #e6e6e6;
+  color: #333;
+  letter-spacing: 0.5px;
+  padding: 14px 64px;
+}
+
+button.submit {
+  color: #fff;
+  padding: 14px 64px;
+  margin: 32px auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-color: black;
+
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+
+button.submit:hover {
+  opacity: 0.85;
+}
+
+.checkbox {
+  display: flex;
+  left: 10%;
+}
+
+@media (max-width: 780px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
