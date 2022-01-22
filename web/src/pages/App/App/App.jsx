@@ -88,6 +88,12 @@ const App = () => {
             <Route path={`${path}about`}>
               <About />
             </Route>
+            <Route path={`${path}faqs`}>
+              <About />
+            </Route>
+            <Route path={`${path}contacts`}>
+              <About />
+            </Route>
           </Switch>
         </div>
       </div>
