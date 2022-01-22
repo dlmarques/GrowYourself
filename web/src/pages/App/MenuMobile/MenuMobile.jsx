@@ -11,21 +11,21 @@ const MenuMobile = ({ setSidebarOpen }) => {
           <AiOutlineCloseCircle />
         </span>
         <div className="links-mobile">
-          <Link to="/users" onClick={() => setSidebarOpen(false)}>
+          <Link to="/calc" onClick={() => setSidebarOpen(false)}>
             Calculators
           </Link>
-          <Link to="/users" onClick={() => setSidebarOpen(false)}>
+          <Link to="/plans" onClick={() => setSidebarOpen(false)}>
             Plans
           </Link>
-          <Link to="/users" onClick={() => setSidebarOpen(false)}>
+          <Link to="/about" onClick={() => setSidebarOpen(false)}>
             About
           </Link>
         </div>
         <div className="auth-menu">
-          <Link to="/users" onClick={() => setSidebarOpen(false)}>
+          <Link to="/login" onClick={() => setSidebarOpen(false)}>
             Log in
           </Link>
-          <Link to="/users" onClick={() => setSidebarOpen(false)}>
+          <Link to="/register" onClick={() => setSidebarOpen(false)}>
             Register
           </Link>
         </div>
